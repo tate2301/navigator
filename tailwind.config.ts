@@ -19,13 +19,27 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        // primary: {
+        //   DEFAULT: "hsl(var(--primary))",
+        //   foreground: "hsl(var(--primary-foreground))",
+        // },
+        // secondary: {
+        //   DEFAULT: "hsl(var(--secondary))",
+        //   foreground: "hsl(var(--secondary-foreground))",
+        // },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          original: "#6e75a8",
+          dark: "#4d5276",
+          light: "#9a9ec2",
+          superdark: "#2c2f43",
+          superlight: "#c5c8dc",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          original: "#3e1929",
+          dark: "#2b121d",
+          light: "#785e69",
+          superdark: "#190a10",
+          superlight: "#b2a3a9",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
