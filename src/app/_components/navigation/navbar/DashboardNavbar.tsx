@@ -1,5 +1,8 @@
 /* eslint-disable @typescript-eslint/consistent-type-imports */
-import { ArrowRightOnRectangleIcon, BellIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowRightOnRectangleIcon,
+  BellIcon,
+} from "@heroicons/react/24/outline";
 import Link from "next/link";
 import React from "react";
 import { data } from "@data/index";
@@ -8,7 +11,9 @@ import { headers } from "next/headers";
 
 const DashboardNavbar = () => {
   const headersList = headers();
-  const activePath = headersList.get("x-invoke-path");
+  const activePath = headersList.get("referer");
+
+  console.log('active path', activePath)
 
   return (
     <div className="main-border-b w-full">
@@ -40,6 +45,9 @@ const DashboardNavbar = () => {
         </button>
         <button className="main-link-text rounded-full p-1 hover:bg-slate-100 dark:hover:bg-slate-800">
           <ArrowRightOnRectangleIcon height={20} width={20} />
+        </button>
+        <button className="h-6 w-6 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
+          <div className="h-full w-full rounded-full bg-slate-200 p-1" />
         </button>
       </div>
     </div>

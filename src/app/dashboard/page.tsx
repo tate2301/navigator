@@ -5,10 +5,8 @@ const Dashboard = () => {
   return (
     <div className="flex min-h-screen bg-slate-50 py-16">
       <div className="mx-auto w-full max-w-7xl px-4">
-        <div className="flex w-full flex-row items-center space-x-4">
         {/* headiing section */}
           <OverviewHeadingSection />
-        </div>
       </div>
     </div>
   );

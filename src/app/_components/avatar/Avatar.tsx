@@ -1,8 +1,12 @@
 import React from "react";
 
-const Avatar = () => {
+interface AvatarProps{
+  className?:string
+}
+
+const Avatar = ({className}:AvatarProps) => {
   return (
-    <div className="relative h-10 w-10 overflow-hidden rounded-full bg-gray-100 dark:bg-gray-600">
+    <div className={`${className} relative h-10 w-10 overflow-hidden rounded-full bg-gray-100 dark:bg-gray-600`}>
       <svg
         className="absolute -left-1 h-12 w-12 text-gray-400"
         fill="currentColor"
