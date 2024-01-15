@@ -4,7 +4,7 @@ import React from 'react'
 
 const OverviewActivityDocumentsSection = () => {
   return (
-    <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+    <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
           <div className="col-span-1 md:col-span-2 ">
             <LearningActivity />
           </div>
