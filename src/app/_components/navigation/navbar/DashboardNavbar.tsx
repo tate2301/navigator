@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/consistent-type-imports */
-import { ArrowRightOnRectangleIcon } from "@heroicons/react/24/outline";
+import { ArrowRightOnRectangleIcon, BellIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import React from "react";
 import { data } from "@data/index";
@@ -18,7 +18,7 @@ const DashboardNavbar = () => {
           <p className="pr-8 text-lg font-semibold text-slate-900">DigiForge</p>
         </div>
         <div className="hidden flex-row items-center space-x-4 text-sm md:flex">
-          {data.nav_options.map((item: NavLinkProps, index) => (
+          {data.student_nav_options.map((item: NavLinkProps, index) => (
             <Link
               href={item.location}
               key={index}
@@ -35,6 +35,9 @@ const DashboardNavbar = () => {
         <div className="flex-1" />
 
         {/* <UserMenu /> */}
+        <button className="main-link-text rounded-full p-1 hover:bg-slate-100 dark:hover:bg-slate-800">
+          <BellIcon height={20} width={20} />
+        </button>
         <button className="main-link-text rounded-full p-1 hover:bg-slate-100 dark:hover:bg-slate-800">
           <ArrowRightOnRectangleIcon height={20} width={20} />
         </button>
