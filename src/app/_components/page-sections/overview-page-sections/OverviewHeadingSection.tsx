@@ -1,4 +1,5 @@
 import Avatar from "@components/avatar/Avatar";
+import { ShareIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, DocumentIcon } from "@heroicons/react/24/solid";
 import React from "react";
 
@@ -19,6 +20,11 @@ const OverviewHeadingSection = () => {
         <p className="text-sm ">This term</p>
         <ChevronDownIcon height={16} width={16} />
       </div>
+      <button className="flex flex-row bg-primary-original hover:bg-primary-dark items-center space-x-2 rounded-lg border border-slate-200/50 px-3 py-2 text-white">
+        <p className="text-sm ">Share report</p>
+        <ShareIcon height={16} width={16} />
+      </button>
+
     </div>
   );
 };
